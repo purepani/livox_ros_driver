@@ -53,7 +53,7 @@
       ROS_HOSTNAME = "localhost";
       ROS_MASTER_URI = "http://localhost:11311";
     };
-    overlays.${system}.default = ros-overlay;
+    overlays.default = ros-overlay;
     packages.${system}.default = pkgs.rosPackages.noetic.livox-driver;
 
     nixConfig = {
