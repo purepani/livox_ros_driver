@@ -41,11 +41,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1694529238,
-        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "lastModified": 1705309234,
+        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
         "type": "github"
       },
       "original": {
@@ -76,14 +76,16 @@
     "nix-ros-overlay": {
       "inputs": {
         "flake-utils": "flake-utils_3",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1707066083,
-        "narHash": "sha256-FTtDI4qfnX9BsxY4cr9pV3EHeDcFoEVzo5Vf6fHEcIc=",
+        "lastModified": 1707588628,
+        "narHash": "sha256-2suIXkfQrOtPeLanj9IE/LD8gLe8oBwOUXeG8pbJrEA=",
         "owner": "lopsided98",
         "repo": "nix-ros-overlay",
-        "rev": "28f3a7e900d7dca5a3890e51a42e54305ffdd20b",
+        "rev": "9f53d85d2a20447f67048a85e5e79e8753dce327",
         "type": "github"
       },
       "original": {
@@ -110,32 +112,16 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1700995207,
-        "narHash": "sha256-uTyMkEVTlgPjQPyB0cAW0mLvXJs5Zq0ZYHnz1pheTgs=",
-        "owner": "lopsided98",
+        "lastModified": 1707466203,
+        "narHash": "sha256-Q31OLA/nh1BFtMc5b0FWjflC+PrsQ0Do7WqqEDcCkTU=",
+        "owner": "orivej",
         "repo": "nixpkgs",
-        "rev": "173b74db07f26344f3517716edd4bff6987b512d",
+        "rev": "2ad2987a9558ab913c42211fbd0fd78b612233f4",
         "type": "github"
       },
       "original": {
-        "owner": "lopsided98",
-        "ref": "nix-ros",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1700995207,
-        "narHash": "sha256-uTyMkEVTlgPjQPyB0cAW0mLvXJs5Zq0ZYHnz1pheTgs=",
-        "owner": "lopsided98",
-        "repo": "nixpkgs",
-        "rev": "173b74db07f26344f3517716edd4bff6987b512d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "lopsided98",
-        "ref": "nix-ros",
+        "owner": "orivej",
+        "ref": "qtwebkit",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -145,7 +131,7 @@
         "flake-utils": "flake-utils",
         "livox-sdk": "livox-sdk",
         "nix-ros-overlay": "nix-ros-overlay",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "systems": {

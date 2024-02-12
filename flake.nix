@@ -5,7 +5,9 @@
     flake-utils.url = "github:numtide/flake-utils";
     livox-sdk.url = "github:purepani/Livox-SDK";
     nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay";
-    nixpkgs.url = "github:lopsided98/nixpkgs/nix-ros";
+    #nixpkgs.url = "github:lopsided98/nixpkgs/nix-ros";
+    nixpkgs.url = "github:orivej/nixpkgs/qtwebkit";
+    nix-ros-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -21,6 +23,7 @@
         livox_sdk = livox-sdk.packages.${system}.default;
       };
     };
+
     ros-overlay = self: super: {
       rosPackages =
         super.rosPackages
@@ -36,7 +39,6 @@
       ];
     };
   in {
-    #nixpkgs.overlays = [nix-ros-overlay.overlay];
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs;
       with rosPackages.noetic;
