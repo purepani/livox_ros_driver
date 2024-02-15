@@ -5,8 +5,8 @@
     flake-utils.url = "github:numtide/flake-utils";
     livox-sdk.url = "github:purepani/Livox-SDK";
     nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay";
-    #nixpkgs.url = "github:lopsided98/nixpkgs/nix-ros";
-    nixpkgs.url = "github:orivej/nixpkgs/qtwebkit";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    #nixpkgs.url = "github:orivej/nixpkgs/qtwebkit";
     nix-ros-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };
 
